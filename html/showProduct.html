@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showProduct</title>
+    <!--/// custom file font awesome \\\---->
+    <link rel="stylesheet" href="../css/all.min.css">   
+    <!----/// Google font \\\---->
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Jost:ital,wght@0,400;0,600;0,800;1,300&family=Lato:wght@300;400;700;900&family=Neonderthaw&family=Pacifico&family=Permanent+Marker&family=Praise&family=Satisfy&family=Spline+Sans+Mono:wght@400;500;700&family=Spline+Sans:wght@700&family=Ubuntu:ital,wght@0,400;1,300;1,500&display=swap" rel="stylesheet">
+    <!----/// custom file soq.shop \\\---->
+    <link rel="stylesheet" href="../css/showProduct.css">
+</head>
+<body>
+
+    <section class="loading_page">
+        <div class="list_spans">
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>    
+    </section>
+
+    <!----/// start header \\\---->
+    <header>
+        <section class="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    Soq <span> Store</span>
+                </a>
+            </div> 
+            <form action="">
+                <input type="text">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form> 
+            <div class="buttons_header">
+                <button class="btn_show_search"  onclick="show_form_search()">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn_Shopping" onclick="open_addCart()">
+                    <span class="contr"></span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </section>
+    </header>
+    <div class="container">
+        <!----/// start show Orders \\\---->
+        <section class="show_Order">
+                <!-- list Images -->
+                <div class="list_images">
+                    <div class="main_image">
+                        <img src="../images/Productes/bag-4.jpeg" alt="Show main image">
+                        <div class="cursor"></div>
+                    </div>
+                    <div class="child_image">
+                        <img src="../images/Productes/bag-1.jpg" alt="">
+                        <img src="../images/Productes/bag-2.jpg" alt="">
+                        <img src="../images/Productes/bag-3.jpg" alt="">
+                        <img src="../images/Productes/bag-4.jpeg" alt="">
+                    </div>
+                </div>
+
+                <!-- information products -->
+                <div class="info_product">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Consectetur, laborum deserunt aliquid cumque explicabo 
+                        eligendi ratione sapiente hic doloribus nesciunt nemo 
+                        corporis autem necessitatibus excepturi pariatur nisi, 
+                        soluta, sunt porro!
+                    </p>
+
+                    <div class="select_delete">
+                        <p class="parnt_price">
+                            price:
+                            <span class="price">$50.00</span>
+                        </p> 
+                        <select name="select_Number_TheItem" id="select_value_number">
+                            <option value="1" selected="1">1</option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
+                            <option value="6"> 6 </option>
+                        </select>
+                    </div>
+                    <!-- fid back of the user -->
+                    <div class="fid_Back">
+                        <span>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <button>
+                            3.2K sales 
+                        </button>
+                        <button> 
+                            1K Comments
+                        </button>
+                    </div>
+                    <!-- comment from users -->
+                    <div class="comments">
+                        <div class="col">
+                            <img src="../images/user-1.png" alt="">
+                            <p> 
+                                adipisicing elit. Reiciendis inventore commodi,
+                                exercitationem eaque.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="../images/user-2.png" alt="">
+                            <p> 
+                                adipisicing elit. Reiciendis inventore commodi,
+                                exercitationem eaque .
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="../images/user-3.png" alt="">
+                            <p> 
+                                adipisicing elit. Reiciendis inventore commodi,
+                                exercitationem eaque.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="total_sales">
+                        <h5>
+                            <span>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            4.2 of 5
+                        </h5>
+                        <div class="col">
+                            <span> 5 star </span>
+                            <p> <span data-width="85%" ></span> </p>
+                        </div>
+                        <div class="col">
+                            <span> 4 star </span> 
+                            <p> <span data-width="50%"></span></p>
+                        </div>
+                        <div class="col">
+                            <span> 3 star </span> 
+                            <p><span data-width="20%"></span></p>
+                        </div>
+                        <div class="col">
+                            <span> 2 star </span>
+                            <p> <span data-width="10%"></span> </p>
+                        </div>
+                        <div class="col">
+                            <span> 1 star </span> 
+                            <p> <span data-width="8%"></span> </p>
+                        </div>
+                    </div>
+                    <button class="check_out" id="btn_AddCart" >Add to cart</button>
+                    <button class="check_out_open_card">Buy Now</button>
+                    </div>
+
+                <!-- add Cart -->
+                <div class="add_cart"> 
+                    <div class="main_total_price">
+                        <h5>Total Prices</h5>
+                        <span class="total_price">$ 0 </span>
+                        <button class="check_out_open_card"> Buy now</button>
+                    </div>
+                </div>
+
+                <!-- zoom Images -->
+                <div class="zoomImage">
+                    <img src="../images/Productes/bag-2.jpg" width="100%" alt="">
+                </div>
+        </section>
+
+        <!----/// start Products \\\---->
+        <section class="Products" >
+            <div class="content"> 
+                <div class="Products_item"> 
+                    <img src="../images/Productes/T-shirt-1.jpg" data-price="$40.00" alt="buy-1">
+                    <h4>T-shirt</h4>
+                    <p>reprehenderit at sapiente quaerat architecto earum eius</p>
+                    <span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                    <span>$40.00</span>
+                </div>
+                <div class="Products_item"> 
+                    <img src="../images/Productes/hours-1.png" data-price="$50.00" alt="buy-1">
+                    <h4>Wristwatch</h4>
+                    <p>reprehenderit at sapiente quaerat architecto earum eius</p>
+                    <span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                    <span>$50.00</span>
+                </div>
+                <div class="Products_item">  
+                        <img src="../images/Productes/bag-1.jpg" data-price="$60.00" alt="buy-1">
+                    <h4> back bag</h4>
+                    <p>reprehenderit at sapiente quaerat architecto earum eius</p>
+                    <span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                    <span> $60.00  </span>
+                </div>
+                <div class="Products_item"> 
+                        <img src="../images/Productes/hours-2.png" data-price="$40.00" alt="buy-1">
+                    <h4>Wristwatch </h4>
+                    <p>reprehenderit at sapiente quaerat architecto earum eius</p>
+                    <span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                    <span> $40.00 </span>
+                </div>
+                <div class="Products_item"> 
+                    <img src="../images/Productes/T-shirt-2.jpg" data-price="$55.00" alt="buy-1">
+                    <h4>T-shirt </h4>
+                    <p>reprehenderit at sapiente quaerat architecto earum eius</p>
+                    <span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                    <span> $55.00  </span>
+                </div>
+                <div class="Products_item"> 
+                    <img src="../images/Productes/bag-2.jpg"data-price="$70.00" alt="buy-1">
+                    <h4>back bag </h4>
+                    <p>reprehenderit at sapiente quaerat architecto earum eius</p>
+                    <span>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </span>
+                    <span> $70.00  </span>
+                </div>
+            </div>  
+            <div class="buttons">
+                <button class="scroll_left" onclick="scroll_left()"><i class="fa-solid fa-angle-left"></i></button>
+                <button class="scroll_right" onclick="scroll_right()"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </section>    
+
+        <section class="Buy_card">
+            <button class="close_card" onclick="close_card()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <form action="">
+                <img src="../images/imageCard.png" alt="">
+                <div class="name_card">
+                    <label for="Name_card">Name on card</label>
+                    <input type="text" id="Name_card">
+                </div>
+                <div class="card_number">
+                    <label for="card_number"> Card number</label>
+                    <input type="number" id="card_number">
+                </div>
+                <div class="card_data">
+                    <label for="Exp_data">Exp data</label>
+                    <input type="number" id="Exp_data">
+                </div>
+                <div class="cvv_data">
+                    <label for="cvv">Cvv</label>
+                    <input type="number" id="cvv">
+                </div>
+                <p>
+                    <span> Total Price </span>
+                    <span class="total_price_check"> $50.00 </span>
+                </p>
+                <button type="submit"> check Out</button>
+            </form>
+        </section>
+    </div>
+    <!------/// start of footer \\\------->
+    <footer>      
+        <div class="row">
+            <div class="links">
+                <h5>Contacts</h5>
+                    <a href="https://ar-ar.facebook.com/">
+                        <span class="icon">   
+                            <i class="fab fa-facebook-f"></i>
+                        </span>
+                        facebook
+                    </a>
+                    <a href="https://twitter.com/">
+                        <span class="icon">
+                            <i class="fab fa-twitter"></i>
+                        </span>
+                        Twitter
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <span class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        Instagram
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <span class="icon">
+                            <i class="fab fa-youtube"></i>
+                        </span>
+                        Youtube
+                    </a>
+                </div>
+            <div class="col">
+                <img src="../images/app-store.png" alt="app-store">
+                <img src="../images/play-store.png" alt="play-store">
+            </div>
+            <div class="logos">
+                <img src="../images/footer_logo-3.jpg" alt="">
+                <img src="../images/footer_logo-4.jpg" alt="">
+                <img src="../images/footer_logo-5.jpg" alt="">
+                <img src="../images/footer_logo.jpg" alt="">
+            </div>
+        </div>
+        <p>Created By Web Designer [<span> ELKASHEF </span> ] All Rights Reserved</p>
+    </footer> 
+
+
+    <!--/// custom file main js \\\-->
+    <script src="../js/app_showProduct.js"></script>  
+</body>
+</html>

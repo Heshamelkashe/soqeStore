@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Soq Account</title>
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- custom fill style Account Page -->
+    <link rel="stylesheet" href="../css/account_style.css">
+</head>
+    <body>
+        <div class="container"> 
+            <section class="logo">
+                <a href="../index.html">
+                    Soq <span> Store</span>
+                </a>
+            </section> 
+            <section class="Error_Massage">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>Error</span>
+                <p></p>
+            </section>
+            <section class="massage_successfully">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>You are welcome</span>
+            </section>
+            <section class="Account" >
+                <!-- sign In -->
+                <div class="sign_in " >
+                        <h5 class=> Sign_in</h5>
+                        <div class="sign_userName">
+                            <label for="email_sign">Enter your Email</label>
+                            <input type="email" id="email_sign"  placeholder="Enter Your Email">
+                        </div>
+                        <div class="sign_password">
+                            <label for="UserPassword">Your Password</label>
+                            <input type="password" id="UserPassword"  placeholder="Enter Your Password">
+                        </div>
+                        <p>
+                            By clicking Sign In, you agree to our
+                            <a href=""> Terms of Use</a> 
+                            and our 
+                            <a href=""> Privacy Policy</a>.
+                        </p>
+                        <button type="submit" id="submit_sign">
+                            Continue
+                        </button>    
+                    <span> New to SoqStore? </span> 
+                    <button onclick="open_create_account()" class="show_create"> Create Account </button>
+                </div>
+                <!-- create Account -->
+                <div class="create_account">  
+                        <h5>Create Your Account</h5> 
+                        <div class="userName">
+                            <label for="create_userName"> Your name</label>
+                            <input type="text"max="8" min="3" id="create_userName"  placeholder=" Your Name "> 
+                            <span class="span_user"></span>  
+                            <span class="good_userName">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                            <span class="bad_userName">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </span>
+                        </div>  
+                        <div class="email_phon">
+                            <label for="create_email">Enter your Email</label>
+                            <input type="email" id="create_email"  placeholder="Enter Your Email"> 
+                            <span class="span_email"></span>
+                            <span class="good_EmailAddress">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                            <span class="bad_EmailAddress">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </span>
+                        </div>
+                        <div class="create_password">
+                            <label for="create_password">Create Your password </label>
+                            <input type="password" id="create_password" max="15" min="8" placeholder=" Minimum 6 characters required "> 
+                            <span class="span_password">
+                            </span>
+                            <span class="good_password">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                            <span class="bad_password">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </span>
+                        </div>
+                        <div class="Rn_password">
+                            <label for="Rn_password">Rn-password</label>
+                            <input type="password" id="Rn_password"  max="16" min="8" placeholder=" Rn_Enter Password">   
+                            <span class="span_RnPassword">
+                            </span>
+                            <span class="good_RnPassword">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+                            <span class="bad_RnPassword">
+                                <i class="fa-solid fa-circle-xmark"></i>
+                            </span>
+                        </div>
+                        <button  class="submit" id="submit_create_account">
+                            Continue
+                        </button>
+                    <p>                        
+                        Already have an account? 
+                        <button onclick="open_signIn_account()"> Sign-In </button>
+                        <br>
+                        Buying for work?
+                        <button> Create business account </button>
+                    </p> 
+                </div>
+            </section>
+            <!-- loading the div -->
+            <section class="loading_page">
+                <div class="list_spans">
+                    <div class="loader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>    
+            </section>
+        </div> 
+
+    <script src="../js/script_Account.js"> </script>
+    </body>
+</html>
